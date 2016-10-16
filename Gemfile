@@ -13,3 +13,5 @@ gem 'yui-compressor', :require => "yui/compressor"
 gem 'therubyracer'
 gem 'pry'
 gem 'pry-doc'
+gem 'xml-simple'
+gem 'domainatrix'
