@@ -1,6 +1,8 @@
-# Sinatra Bootstrap
+# Stack Exchange Equivalent Domains
 
-Sinatra, HAML, SASS, Coffeescript, jQuery, Underscore, Sprockets, Asset Packaging, Heroku, Pry
+Consume the feed that describes all of the web sites in the Stack Exchage
+network and prints a comma-separated list of unique publicly registered domain
+names.
 
 # Instructions
 
