@@ -7,5 +7,6 @@
   %body
     %header
       %h1= "Stack Exchange Equivalent Domains"
-    %p= File.read('views/stackdom.out')
+    %p= puts ENV['PWD']
+    /%p= File.read('views/stackdom.out')
     /%script{:type => "text/javascript", :src  => "assets/application.js"}
