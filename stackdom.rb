@@ -16,7 +16,7 @@ require 'rubygems'
 require 'xmlsimple'
 require 'domainatrix'
 
-equivalent_domains = []
+domains = []
 
 # get the list of SE sites from their XML feed
 feed = 'http://stackexchange.com/feeds/sites'
@@ -30,8 +30,8 @@ data = XmlSimple.xml_in(doc)
 # push the result into an array
 data['entry'].each do |entry|
   url = Domainatrix.parse(entry["id"][0])
-  equivalent_domains << url.domain + "." + url.public_suffix
+  domains << url.domain + "." + url.public_suffix
 end
 
 # print a comma-separated list of unique domain names
-puts equivalent_domains.uniq * ","
+puts domains.uniq * ","
