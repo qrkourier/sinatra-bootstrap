@@ -1,3 +1,4 @@
+require 'sinatra'
 class Application < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :logging, true

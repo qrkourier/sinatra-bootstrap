@@ -7,7 +7,7 @@ require 'sprockets'
 require 'uglifier'
 require "yui/compressor"
 
-require "application"
+require "./application"
 
 map '/assets' do
   environment = Sprockets::Environment.new
