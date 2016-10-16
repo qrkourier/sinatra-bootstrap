@@ -9,7 +9,6 @@
 # tested with >= Ruby 1.9.2
 #
 #
-$:.unshift File.expand_path("../../", __FILE__)
 
 # stdlib
 require 'net/http'
