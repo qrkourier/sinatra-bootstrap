@@ -6,10 +6,6 @@ GEM
       open4
     Platform (0.4.0)
     coderay (0.9.8)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.1.3)
     execjs (1.2.12)
       multi_json (~> 1.0)
     haml (3.1.3)
@@ -35,9 +31,9 @@ GEM
     sass (3.1.12)
     sexp_processor (3.0.9)
     sinatra (1.3.1)
-      rack (>= 1.3.4, ~> 1.3)
-      rack-protection (>= 1.1.2, ~> 1.1)
-      tilt (>= 1.3.3, ~> 1.3)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+      tilt (~> 1.3, >= 1.3.3)
     slop (2.1.0)
     sprockets (2.1.2)
       hike (~> 1.2)
@@ -57,7 +53,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
   haml
   pry
   pry-doc
@@ -67,3 +62,6 @@ DEPENDENCIES
   therubyracer
   uglifier
   yui-compressor
+
+BUNDLED WITH
+   1.13.5

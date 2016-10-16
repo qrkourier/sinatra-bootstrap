@@ -4,5 +4,7 @@ class Application < Sinatra::Base
 
   get '/' do
     haml :index
+    send_file 'views/stackdom.out'
   end
 end
+
