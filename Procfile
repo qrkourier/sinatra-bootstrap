@@ -1,1 +1,1 @@
-web: bundle exec rackup -p 443
+web: bundle exec rackup -p 9292 config.ru
