@@ -1,6 +1,7 @@
+
 $:.unshift File.expand_path("../", __FILE__)
 
-require_relative "application.rb"
+require "./application"
 
 map '/assets' do
   environment = Sprockets::Environment.new

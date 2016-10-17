@@ -2,12 +2,22 @@
 %html{ :lang => "en"}
   %head
     %title= "Stack Exchange Equivalent Domains"
-    /%link{ :charset => "utf-8", :href => "/assets/application.css",
-    /       :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    %link{ :charset => "utf-8", :href => "/assets/application.css",
+           :media => "screen", :rel => "stylesheet", :type => "text/css" }
   %body
     %header
-      %h1= "Stack Exchange Equivalent Domains"
-    %p= @lists.sort.join(",")
-    %p= Sinatra::Base.development? ? "dev mode" : ""
-    
-    /%script{:type => "text/javascript", :src  => "assets/application.js"}
+      %h3 Stack Exchange Federated Domains
+    %section
+      = @lists.sort.join(", ")
+    %footer
+      %p
+        
+    %section{:id => 'debug'}
+      updated by 
+      %a(href="https://github.com/qrkourier/stackdom") stackdom.rb
+      at #{@timestamps.sort.last} from 
+      %a(href="http://stackexchange.com/feeds/sites") the Stack Exchange feed
+      = Sinatra::Base.development? ? "(dev mode)" : ""
+
+    %script{:type => "text/javascript", :src  => "assets/application.js"}
+

@@ -1,0 +1,14 @@
+body {
+  background: #ddd;
+  color: #555;
+  width: 777px;
+  margin: 0 auto; }
+
+section, header, footer {
+  word-wrap: normal;
+  font-family: sans-serif; }
+  section#debug, section#log, header#debug, header#log, footer#debug, footer#log {
+    font-family: Courier, "Lucida Console", monospace;
+    margin-bottom: 11px;
+    padding-top: 22px;
+    font-size: small; }
