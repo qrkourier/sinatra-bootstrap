@@ -1,8 +1,0 @@
-
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: stackdom
-  pool: 2
-  username: kbingham
-  password: asdf;lkj
