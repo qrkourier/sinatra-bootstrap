@@ -8,4 +8,6 @@
     %header
       %h1= "Stack Exchange Equivalent Domains"
     %p= @lists.sort.join(",")
+    %p= Sinatra::Base.development? ? "dev mode" : ""
+    
     /%script{:type => "text/javascript", :src  => "assets/application.js"}

@@ -37,8 +37,7 @@ data['entry'].each do |entry|
 end
 
 ActiveRecord::Base.establish_connection(
-  :adapter   => 'postgresql',
-  :database  => 'stackdom'
+  ENV['DATABASE_URL'] || 'postgres://localhost/stackdom'
 )
 
 # for each unique domain name create a record in the domains table in the list

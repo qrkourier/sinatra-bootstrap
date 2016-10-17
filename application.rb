@@ -13,8 +13,7 @@ class Domains < ActiveRecord::Base
 end
 
 ActiveRecord::Base.establish_connection(
-  :adapter   => 'postgresql',
-  :database  => 'stackdom'
+    ENV['DATABASE_URL'] || 'postgres://kbingham:asdf;lkj@localhost/stackdom'
 )
 
 class StackDomApp < Sinatra::Base
