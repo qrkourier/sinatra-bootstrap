@@ -1,4 +1,4 @@
 .sass-cache
 .DS_Store
 views/stackdom.out
-config/database.yml
+#config/database.yml
