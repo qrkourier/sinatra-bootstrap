@@ -12,6 +12,6 @@ map '/assets' do
 end
 
 map '/' do
-  run Application
+  run StackDomApp
 end
 

@@ -16,6 +16,8 @@ require 'net/http'
 require 'rubygems'
 require 'xmlsimple'
 require 'domainatrix'
+require 'pry'
+require './application'
 
 domains = []
 
@@ -34,5 +36,18 @@ data['entry'].each do |entry|
   domains << url.domain + "." + url.public_suffix
 end
 
+ActiveRecord::Base.establish_connection(
+  :adapter   => 'postgresql',
+  :database  => 'stackdom'
+)
+
+# for each unique domain name create a record in the domains table in the list
+# column unless it already exists; the Domains model in application.rb
+# validates_uniqueness_of the record
+domains.uniq.each do |domain|
+  #binding.pry
+  Domains.create(:list => domain)
+end
+
 # print a comma-separated list of unique domain names
-puts domains.uniq * ","
+#puts domains.uniq * ","
