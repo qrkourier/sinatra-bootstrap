@@ -6,11 +6,3 @@ development:
   pool: 2
   username: kbingham
   password: asdf;lkj
-
-#production:
-  #adapter: postgresql
-  #encoding: unicode
-  #database: stackdom
-  #pool: 2
-  #username: stackdom
-  #password: stackdom-morning-everglades-72373
